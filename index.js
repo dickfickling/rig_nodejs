@@ -7,7 +7,7 @@ var server = Hapi.createServer('localhost', 5454);
 // Add the route
 server.route({
     method: 'GET',
-    path: '/rig',
+    path: '/',
     handler: function (request, reply) {
         helper.getIdentity(reply);
     }
